@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tree_app/constants.dart';
+import 'package:tree_app/screens/details/details_screen.dart';
 
 class RecommendTree extends StatelessWidget {
   const RecommendTree({
@@ -17,21 +18,39 @@ class RecommendTree extends StatelessWidget {
             title: "Samantha",
             country: "Russia",
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(),
+                  ));
+            },
           ),
           RecommendTreeCard(
             image: "assets/images/image_2.png",
             title: "Samantha",
             country: "Russia",
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(),
+                  ));
+            },
           ),
           RecommendTreeCard(
             image: "assets/images/image_3.png",
             title: "Samantha",
             country: "Russia",
             price: 440,
-            press: () {},
+            press: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(),
+                  ));
+            },
           ),
         ],
       ),
