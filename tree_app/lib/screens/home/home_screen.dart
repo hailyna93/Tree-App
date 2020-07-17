@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tree_app/screens/home/components/home_body.dart';
+import 'package:tree_app/screens/home/components/my_bottom_navigation_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: buildAppBar(), body: HomeBody());
+    return Scaffold(
+      appBar: buildAppBar(),
+      body: HomeBody(),
+      bottomNavigationBar: MyBottomNavigationBar(),
+    );
   }
 
   AppBar buildAppBar() {

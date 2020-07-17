@@ -18,7 +18,7 @@ class HeaderSearch extends StatelessWidget {
             padding: EdgeInsets.only(
                 left: kDefaultPadding,
                 right: kDefaultPadding,
-                bottom: kDefaultPadding),
+                bottom: kDefaultPadding * 2),
             decoration: BoxDecoration(
                 color: kPrimaryColor,
                 borderRadius: BorderRadius.only(
